@@ -1,0 +1,203 @@
+/*導航欄*/
+ul {
+  font-family:Potta One;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color:#ffffcc;/*#ffffcc*/
+  display: flex;  /*置中對齊*/
+  justify-content: center;
+  position:fixed; /*固定導航欄*/
+  top:0;
+  left:0;
+  width:100%;
+}
+li {
+  float: left;
+  justify-content: center;
+  display: flex; /*置中對齊*/
+  /*display:table-cell;*/ /*截斷導航欄*/
+}
+li:last-child {
+  border:none;
+  display: table-cell; /*置中對齊*/
+}
+li a{
+  display: inline-block;
+  color:#ccf3ff;/*#e5f9ff*/
+  padding:5px 30px;
+  text-shadow: -1px 0 #ccf3ff, 0 1px #ccf3ff, 1px 0 #ccf3ff, 0 -1px #ccf3ff;
+  text-align:center;
+  text-decoration:none;
+  font-size: 40px;
+}
+li a:hover{
+  background-color:#99ccff;
+}
+
+.active {
+  background-color:#99ccff;
+}
+
+/*店名*/
+h1{
+  font-size:100px;
+  font-family:Potta One;
+  color:#e5f9ff;
+  text-align:center;
+  text-shadow: 2px 2px #ccf3ff;
+}
+
+.h1span{
+  font-family: cwTeXYen;
+  color:#e5f9ff;
+  text-shadow: 2px 2px #ccf3ff;
+}
+
+/*h2{
+  font-size: 30px;
+  font-family: Potta One;
+  color:#e5e5ff;
+  text-align:center;
+  text-shadow: 2px 2px #ccccff;
+}*/
+
+/*美好的一天*/
+h2{
+  font-size: 50px;
+  font-family:Potta One;
+  color:#ffffb3;
+  text-align:center;
+  text-shadow: 2px 2px #ccccff;
+}
+p{
+  font-family:Potta One;
+  font-size:60px;
+  text-align:center;
+  color:#ffffcc;
+  text-shadow:2px 2px #99ccff;
+}
+
+/*產品圖片*/
+div.Products {
+  border: 5px solid #ffffb3;
+}
+
+div.Products:hover {
+  border: 5px solid #ccf3ff;
+}
+
+div.Products img {
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.desc {
+     /*53px 100px 40px 220px*/
+  text-align: center;
+  font-family:Potta One;/*cwTeXYen*/
+  font-size:60px;
+  color:#ffffcc;
+  text-shadow:2px 2px #99ccff;
+  /*align:center;
+  valign:center;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 50px 40px 50px 165px;*/
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  width: 24.99999%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+img{
+  width:300px;
+  height:200px;
+  max-width:100%;
+}
+
+.donaunt{
+  font-family: cwTeXYen;
+  font-size:30px;
+  color:#ffffcc;
+  text-align:center;
+  text-shadow:2px 2px #99ccff;
+  /*color:#ffffb3;
+  text-shadow: 2px 2px #ccccff;
+}
+
+.Shuangbaotai{
+  font-family: cwTeXYen;
+  font-size:30px;
+  color:#ffffcc;
+  text-align:center;
+  text-shadow:2px 2px #99ccff;
+}
+
+.Springroll{
+  font-family: cwTeXYen;
+  font-size:30px;
+  color:#ffffcc;
+  text-align:center;
+  text-shadow:2px 2px #99ccff;
+}*/
+
+
+.lang-switch-button{
+  background-color:#ffffcc;
+  display: inline-block;
+  color:#ccf3ff;/*#e5f9ff*/
+  padding:5px 30px;
+  text-shadow: -1px 0 #ccf3ff, 0 1px #ccf3ff, 1px 0 #ccf3ff, 0 -1px #ccf3ff;
+  text-align:center;
+  text-decoration:none;
+  font-size: 40px;
+  /*font-weight:bold;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -goog-ms-border-radius: 5px;
+  border-radius: 5px;*/
+
+}
+
+address{
+  font-family:Potta One;
+  font-size:35px;
+  /*text-align:center;*/
+  text-shadow: 2px 2px #ccccff;
+  color:#ffffb3;/*#ffffb3*/
+  border:5px solid #ffffe6;
+  padding:15px 15px 15px 600px;
+  margin:25px 50px;
+  /*border-radius: 30px;邊框角變圓*/
+}
